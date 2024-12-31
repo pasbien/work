@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5DC;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #333;
+            margin-top: 30px;
+            text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px 0;
+            border-collapse: separate; /* Окремі рамки для клітинок */
+            border-spacing: 0; /* Прибираємо зазори між клітинками */
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; /* Заокруглення кути таблиці */
+            overflow: hidden; /* Запобігає виходу елементів */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: none; /* Прибираємо рамки клітинок */
+        }
+
+        th {
+            background-color: #FFA07A;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 15px; /* Заокруглення нижнього лівого кута */
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 15px; /* Заокруглення нижнього правого кута */
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; /* Відтінок при наведенні */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://www.pwc.com/content/dam/pwc/ca/en/real-estate/assets/p1114181-fs-refresh-real-estate-hero-banner-1600x900.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            filter: brightness(0.8);
+        }
+
+        .btn-back {
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFA07A;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-back:hover {
+            background-color: #FF6347;
+            transform: scale(1.05);
+        }
+
+        .btn-back:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Property Inquiries</h1>
+
+    <table>
+        <tr>
+            <th>Inquiry ID</th>
+            <th>Property Title</th>
+            <th>Buyer Name</th>
+            <th>Inquiry Date</th>
+            <th>Message</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Простора квартира в центрі</td>
+            <td>Марія Іваненко</td>
+            <td>2023-12-01</td>
+            <td>Доброго дня! Цікавить стан ремонту в квартирі.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Приватний будинок біля лісу</td>
+            <td>Юлія Коваленко</td>
+            <td>2023-12-05</td>
+            <td>Чи можна оглянути будинок у вихідні?</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Мальовничий котедж на озері</td>
+            <td>Олександр Бойко</td>
+            <td>2023-12-10</td>
+            <td>Чи можливо придбати це з розстрочкою?</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Офісне приміщення у центрі</td>
+            <td>Олена Смирнова</td>
+            <td>2023-12-12</td>
+            <td>Чи доступне це приміщення для довготривалої оренди?</td>
+        </tr>
+    </table>
+
+    <a href="/" class="btn-back">Back to Home</a>
+</body>
+</html>
